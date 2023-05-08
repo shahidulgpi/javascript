@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BMI Calculator</title>
+    <style>
+      body {
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      form {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      label {
+        display: inline-block;
+        width: 100px;
+        text-align: left;
+        margin-bottom: 10px;
+      }
+
+      input[type="number"] {
+        width: 180px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      button[type="button"] {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #1abc9c;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      #result {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BMI Calculator</h1>
+    <form>
+      <label for="weightInput">Weight (kg):</label>
+      <input type="number" id="weightInput" name="weightInput">
+      <br>
+      <label for="heightInput">Height (m):</label>
+      <input type="number" id="heightInput" name="heightInput">
+      <br>
+      <button type="button" id="calculateBtn">Calculate BMI</button>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
